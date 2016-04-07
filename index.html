@@ -141,6 +141,23 @@
                         <div><img src="images/sub-handmade.png" alt="handmade">
                         </div>
                     </div>
+                    <div style="text-align:center;">
+                        <iframe src="http://52.30.151.215/app/kibana#/visualize/edit/Le-Camion-en-temps-r%C3%A9el?embed=true&_g=(refreshInterval:(display:'5%20seconds',pause:!f,section:1,value:5000),time:(from:now-5m,mode:absolute,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(autoPrecision:!t,field:location,precision:2),schema:segment,type:geohash_grid)),listeners:(),params:(addTooltip:!t,heatBlur:15,heatMaxZoom:16,heatMinOpacity:0.1,heatNormalizeData:!t,heatRadius:25,isDesaturated:!t,mapType:'Scaled%20Circle%20Markers',wms:(enabled:!f,options:(attribution:'Maps%20provided%20by%20USGS',format:image%2Fpng,layers:'0',styles:'',transparent:!t,version:'1.3.0'),url:'https:%2F%2Fbasemap.nationalmap.gov%2Farcgis%2Fservices%2FUSGSTopo%2FMapServer%2FWMSServer')),title:'Le%20Camion%20en%20temps%20r%C3%A9el',type:tile_map))" height="400" width="900"></iframe>
+                    </div>
+                    <br />
+                    <br />
+                    <div style="text-align:center;">
+                        <iframe src="http://52.30.151.215/app/kibana#/visualize/create?embed=true&type=table&indexPattern=prod_sigfox_messages-*&_g=(refreshInterval:(display:'5%20seconds',pause:!f,section:1,value:5000),time:(from:now-3m,mode:relative,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(field:pression),schema:metric,type:avg),(id:'2',params:(field:idPneu.raw,order:desc,orderBy:'1',size:5),schema:bucket,type:terms),(id:'3',params:(field:pression),schema:metric,type:min),(id:'4',params:(field:pression),schema:metric,type:max)),listeners:(),params:(perPage:10,showMeticsAtAllLevels:!f,showPartialRows:!f),title:'New%20Visualization',type:table))" height="200" width="1000"></iframe>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div>
+                        <div data-widget-latlng="45.616669,1.43333" data-widget-style="roadmap" data-widget-zoom="14" data-disable-scroll="1" class="w-widget w-widget-map"></div>
+                    </div>
+                    <br />
+                    <br />
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -157,11 +174,6 @@
                             <td style="background-color: rgb(51, 205, 95);color:#fff;">8.4 bar</td>
                         </tr>
                     </table>
-                    <br />
-                    <br />
-                    <div>
-                        <div data-widget-latlng="43.1833,3" data-widget-style="roadmap" data-widget-zoom="14" data-disable-scroll="1" class="w-widget w-widget-map"></div>
-                    </div>
                 </div>
             </div>
         </div>
